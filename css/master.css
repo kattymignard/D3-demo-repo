@@ -10,4 +10,34 @@ background: rgba(239,216,7);
   display: flex;
   align-items: center;
   justify-content: center;
+  animation-name: bounce;
+  animation-duration: 4s;
+  animation-iteration-count: 8;
+}
+
+@keyframes bounce {
+  0% {
+    transform: scale(1);
+    position: relative;
+    top: 0;
+  }
+
+  40% {
+    transform: scale(1.8);
+    position: relative;
+    top: 400px;
+  }
+
+  80% {
+    transform: scale(0.6);
+    position: relative;
+    top: 200;
+  }
+
+  100% {
+    transform: scale(1);
+    position: relative;
+    top: 0;
+  }
+
 }
